@@ -1,0 +1,106 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.75 [en] (Win98; U) [Netscape]">
+   <title>Blazix Java Server</title>
+</head>
+<body>
+&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=1 WIDTH="100%" >
+<tr>
+<td BGCOLOR="#000099">
+<center>
+<li>
+<i><font color="#FFFF99"><font size=+4>Blazix Java Server</font></font></i></li></center>
+</td>
+</tr>
+
+<tr>
+<td>
+<h2>
+Congratulations!</h2>
+If you are viewing this page by accessing the URL http://RiteeshaSujeeth/ or http://localhost/
+in a browser, your Blazix server is up and running successfully!
+<p>Here are more links to confirm that various pieces of the server are
+working correctly.
+<h3>
+JSP</h3>
+In order to have JSP work correctly, the "javac" command must be available
+in your PATH (typing "javac" in a Command window should invoke the compiler.)&nbsp;
+If it is not, you must add it and reboot the machine, then restart the
+server.
+<p>If "javac" is already setup correctly, click on the link below to confirm
+that JSPs are working correctly.&nbsp; (Note: the first time it will take
+a while because the JSP page will be turned into Java and compiled using
+javac.)
+<blockquote><a href="Jsptest.jsp">JSP Test Page</a></blockquote>
+
+<h3>
+Authentication</h3>
+The following link demonstrates authentication.&nbsp; Use the username
+"test" and the password "testpwd" when asked.&nbsp; You can change the
+"application.default.authType" parameter in web.ini to "Basic" and restart
+the Blazix server, to see an instance of "Basic" authentication instead
+of "Form" authentication.
+<blockquote><a href="AuthenticationTest.html">Authentication Sample</a></blockquote>
+
+<h3>
+Internationalization</h3>
+The link below demonstrates JSP internationalization.&nbsp; View the page
+from the link below.&nbsp; Then temporarily change your browser's language
+preference to french (the only translation file included with the sample
+is for french) and reload the page.&nbsp; You should see the language on
+the page change.
+<blockquote><a href="I18nsample.jsp">Internationalization Sample</a></blockquote>
+HTML internationalization is similar, but instead of only one base file
+and multiple translation files, involves maintaining separate HTML files
+for each language.&nbsp; The server automatically picks the right language
+version if available.
+<h3>
+WIRELESS</h3>
+The installation adds a sample <i>index.wsp</i> file.&nbsp; If you have
+access to a WAP-capable wireless device (or a WAP simulator), you can also
+confirm that the WSP suffix is available and working correctly by pointing
+your wireless device or simulator to the URL http://RiteeshaSujeeth/
+<p>Notes:
+<ul>
+<li>
+You may have to enter the IP address rather than the name of your machine
+if the machine's hostname is not externally known.</li>
+
+<li>
+If you are inside a firewall, the WAP device or WAP simulator will not
+be able to get to your machine unless your machine's port 80 is opened
+through the firewall.&nbsp; (WAP simulators placed on the same machine,
+or at another machine inside the firewall will not have this problem.)</li>
+
+<li>
+The first time this page is accessed it will take a little while, because
+the WSP page will be turned into Java and compiled using javac.</li>
+</ul>
+
+<h3>
+What next?</h3>
+You can now start adding your own pages.&nbsp; A simple test is to place
+an HTML file in <tt>C:\Blazix\webfiles</tt> folder, and view it from the
+browser.&nbsp; If you create a file called <tt>C:\Blazix\webfiles\myfile.html</tt>,
+it will be accessible from your browser as <a href="http://RiteeshaSujeeth/myfile.html">http://RiteeshaSujeeth/myfile.html</a>
+or <a href="http://localhost/myfile.html">http://localhost/myfile.html</a>
+<p>If you look in the <tt>web.ini</tt> file in <tt>C:\Blazix</tt>, you will
+see that <tt>application.default.dir</tt> attribute has been set to <tt>C:\Blazix\webfiles</tt>
+directory.
+<p>If you would like to change the directory where you will keep your web
+pages, change the <tt>web.ini</tt> file so that "<tt>application.default.dir</tt>"
+points to your directory.
+<p>See the links on "Getting Started" in the online documentation for further
+suggestions on getting started with the Blazix server.</td>
+</tr>
+
+<tr>
+<td></td>
+</tr>
+</table>
+
+</body>
+</html>
